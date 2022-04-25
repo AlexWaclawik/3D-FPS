@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/Models/Quake Weapons/weapon8.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://assets/Models/Quake Weapons/weapon8.png" type="Texture" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 2 )
+
+[node name="gun" type="Spatial"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 1 )

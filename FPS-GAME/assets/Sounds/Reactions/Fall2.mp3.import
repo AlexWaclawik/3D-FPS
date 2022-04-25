@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Fall2.mp3-6b358cbd4fd68794c8e70549419f1def.mp3str"
+
+[deps]
+
+source_file="res://assets/Sounds/Reactions/Fall2.mp3"
+dest_files=[ "res://.import/Fall2.mp3-6b358cbd4fd68794c8e70549419f1def.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

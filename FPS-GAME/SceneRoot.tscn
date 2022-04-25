@@ -1,0 +1,159 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://ArenaFloor.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/Sounds/Reactions/jumpsound-crop.mp3" type="AudioStream" id=2]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/Sounds/Firing/shots/cg1.wav" type="AudioStream" id=4]
+[ext_resource path="res://SceneRoot.gd" type="Script" id=5]
+[ext_resource path="res://HUD.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Arena.tscn" type="PackedScene" id=9]
+[ext_resource path="res://enemy.tscn" type="PackedScene" id=10]
+
+[sub_resource type="NavigationMesh" id=4]
+sample_partition_type/sample_partition_type = 1
+
+[sub_resource type="CylinderMesh" id=1]
+height = 0.25
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0, 0.666667, 1, 1 )
+emission_enabled = true
+emission = Color( 1, 1, 1, 1 )
+emission_energy = 0.25
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="Curve3D" id=3]
+_data = {
+"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, -36.5145, 9.03654, 36.2878, 0, 0, 0, 0, 0, 0, -36.4603, 9.08974, -36.473, 0, 0, 0, 0, 0, 0, 36.9937, 9.09396, -36.4671, 0, 0, 0, 0, 0, 0, 36.9937, 8.98988, 36.3177, 0, 0, 0, 0, 0, 0, -36.5145, 9.03654, 36.2878 ),
+"tilts": PoolRealArray( 0, 0, 0, 0, 0 )
+}
+
+[sub_resource type="CubeMesh" id=5]
+size = Vector3( 80, 50, 1 )
+
+[sub_resource type="SpatialMaterial" id=6]
+flags_transparent = true
+albedo_color = Color( 1, 1, 1, 0 )
+
+[sub_resource type="ConvexPolygonShape" id=7]
+points = PoolVector3Array( 40, 25, 0.5, 40, 25, -0.5, -40, 25, 0.5, 40, -25, 0.5, 40, -25, -0.5, -40, 25, -0.5, -40, -25, 0.5, -40, -25, -0.5 )
+
+[node name="SceneRoot" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00633049, 0.185266, 0.472984 )
+script = ExtResource( 5 )
+enemy = ExtResource( 10 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.05615 )
+
+[node name="wepSnd" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -20.0
+
+[node name="HUD" parent="." instance=ExtResource( 6 )]
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.989945, 0.141454, 0, -0.141454, 0.989945, 0, 138.24, 2.04561 )
+light_energy = 3.0
+
+[node name="arenaLarge" parent="." instance=ExtResource( 9 )]
+
+[node name="Navigation" type="Navigation" parent="arenaLarge"]
+
+[node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="arenaLarge/Navigation"]
+navmesh = SubResource( 4 )
+
+[node name="jumpSnd" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = -5.0
+
+[node name="Cylinders" type="Spatial" parent="."]
+visible = false
+
+[node name="MeshInstance" type="MeshInstance" parent="Cylinders"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36.5201, 8.248, -36.6148 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Cylinders"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36.5201, 8.248, 36.3852 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Cylinders"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -36.4799, 8.248, 36.3852 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Cylinders"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -36.3907, 8.248, -36.4571 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="spawnPath" type="Path" parent="."]
+curve = SubResource( 3 )
+
+[node name="spawnLocation" type="PathFollow" parent="spawnPath"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -36.5145, 9.03654, 36.2878 )
+
+[node name="enemyTimer" type="Timer" parent="."]
+wait_time = 4.0
+autostart = true
+
+[node name="ground" type="Spatial" parent="."]
+
+[node name="Walls" type="Spatial" parent="."]
+
+[node name="Wall1" type="StaticBody" parent="Walls"]
+
+[node name="MeshInstance" type="MeshInstance" parent="Walls/Wall1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25, 40 )
+mesh = SubResource( 5 )
+material/0 = SubResource( 6 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls/Wall1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25, 40 )
+shape = SubResource( 7 )
+
+[node name="Wall2" type="StaticBody" parent="Walls"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Walls/Wall2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25, 40 )
+mesh = SubResource( 5 )
+material/0 = SubResource( 6 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls/Wall2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25, 40 )
+shape = SubResource( 7 )
+
+[node name="Wall3" type="StaticBody" parent="Walls"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Walls/Wall3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25, 40 )
+mesh = SubResource( 5 )
+material/0 = SubResource( 6 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls/Wall3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25, 40 )
+shape = SubResource( 7 )
+
+[node name="Wall4" type="StaticBody" parent="Walls"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Walls/Wall4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25, 40 )
+mesh = SubResource( 5 )
+material/0 = SubResource( 6 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls/Wall4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25, 40 )
+shape = SubResource( 7 )
+
+[node name="ArenaFloor" parent="." instance=ExtResource( 1 )]
+
+[connection signal="timeout" from="enemyTimer" to="." method="_on_enemyTimer_timeout"]
+
+[editable path="Player"]

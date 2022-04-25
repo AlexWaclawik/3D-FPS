@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Panferov_fight01_loop(mp3^320).mp3-badfc00bba6a96fc142052ed3174daae.mp3str"
+
+[deps]
+
+source_file="res://assets/Sounds/Music/Panferov_fight01_loop(mp3^320).mp3"
+dest_files=[ "res://.import/Panferov_fight01_loop(mp3^320).mp3-badfc00bba6a96fc142052ed3174daae.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

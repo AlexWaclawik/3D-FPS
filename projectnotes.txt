@@ -1,0 +1,76 @@
+Stretch Goal List
+	Bare Minimum:
+		1) Player Controller
+			- weapon
+				- sound (X)
+				- firing effect
+				- fire rate
+			- movement (X)
+			- HUD
+				- crosshair (X)
+				- score
+				- health
+		2) Base Enemy
+			- model
+			- animations
+				- moveset
+				- attack set
+		3) Level
+	Additional Features
+		- more weapons
+		- more enemy types
+		- ammo pickups
+		- powerups
+		- some sort of extra map movement (jump pads, teleporter, etc)
+
+https://opengameart.org/content/muzzle-flash-with-model
+https://github.com/rhulha/quake3-movement-godot
+https://godotengine.org/qa/28274/best-way-to-make-fps-hitscan-raycast-shooting
+https://www.youtube.com/watch?v=am-fb2fFNzM
+https://www.youtube.com/watch?v=4jbfIN4t83k
+
+Voiceover:
+	https://opengameart.org/content/voiceover-pack-fighter-40-taunts
+	https://opengameart.org/content/voiceover-pack-40-lines
+
+Music:
+	https://opengameart.org/content/cyberpunk-moonlight-sonata
+	https://opengameart.org/content/fight-music-theme01
+
+Sounds:
+	https://opengameart.org/content/chaingun-pistol-rifle-shotgun-shots
+	https://opengameart.org/content/handgun-reload-sound-effect
+	https://opengameart.org/content/handling-guns
+	https://opengameart.org/content/fleshy-fight-sounds
+	https://opengameart.org/content/shotgun-reload-sound-effects
+	https://opengameart.org/content/gun-reload-sounds
+
+Sprites:
+	https://opengameart.org/content/monster-for-3d-fps-based-on-sprites-harkubus
+	https://opengameart.org/content/monster-mutant-grunt-for-fps-game
+	https://opengameart.org/content/monster-close-combat-mutant-for-fps-game-using-sprites
+	https://opengameart.org/content/monster-mutant-leader-for-fps-game
+	
+Textures:
+	https://opengameart.org/content/tileable-brick-ground-textures-set-2
+	https://opengameart.org/content/dirty-quake-ish-floor-tiles
+	https://opengameart.org/content/doors-crates-low-res
+	https://opengameart.org/content/gloomy-skybox
+	
+Models:
+	https://opengameart.org/content/oldschool-afps-weapons
+	
+Misc:
+	https://opengameart.org/content/crosshairs-and-reticles
+	https://opengameart.org/content/fps-icons-51-high-res-icons
+	https://opengameart.org/content/fps-weapon-sprites
+	
+Shaders:
+	https://github.com/EXPWorlds/Godot-Cel-Shader
+	https://github.com/GDQuest/godot-shaders
+	
+	https://godotshaders.com/shader/post-effect-outline-shader-for-gles2/
+	https://godotshaders.com/shader/crt-shader-with-realistic-blurring/
+	https://godotshaders.com/shader/toon/
+	https://godotshaders.com/shader/collectable-item-shining-highlight/
+	https://godotshaders.com/shader/inverted-color-crosshair/

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/jump2-[AudioTrimmer.com].mp3-99952963aaf7d97a36c8a5c15660dde7.mp3str"
+
+[deps]
+
+source_file="res://assets/Sounds/Reactions/jump2-[AudioTrimmer.com].mp3"
+dest_files=[ "res://.import/jump2-[AudioTrimmer.com].mp3-99952963aaf7d97a36c8a5c15660dde7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

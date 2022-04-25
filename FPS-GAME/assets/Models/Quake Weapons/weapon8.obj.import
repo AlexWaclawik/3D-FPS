@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/weapon8.obj-77fb98c0bc360d047473f0a129e3a9df.mesh"
+
+[deps]
+
+files=[ "res://.import/weapon8.obj-77fb98c0bc360d047473f0a129e3a9df.mesh" ]
+
+source_file="res://assets/Models/Quake Weapons/weapon8.obj"
+dest_files=[ "res://.import/weapon8.obj-77fb98c0bc360d047473f0a129e3a9df.mesh", "res://.import/weapon8.obj-77fb98c0bc360d047473f0a129e3a9df.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

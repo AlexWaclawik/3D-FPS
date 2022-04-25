@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/jumpsound-crop.mp3-2a9d7bd93bad125cb2531f43d8ef9cf4.mp3str"
+
+[deps]
+
+source_file="res://assets/Sounds/Reactions/jumpsound-crop.mp3"
+dest_files=[ "res://.import/jumpsound-crop.mp3-2a9d7bd93bad125cb2531f43d8ef9cf4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
