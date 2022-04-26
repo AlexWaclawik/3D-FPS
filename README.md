@@ -12,6 +12,22 @@ This game is a 3D first person shooter in which you control a character and shoo
 
 <p align="right"></p>
 
+### Design
+
+**Player**
+- The player consists of a capsule for collosion detection, with the head being on top. Attached to
+the head is a camera and a raycast extending outward. The raycast is used for hitscan aiming. Lastly, a
+gun model is attached, and is centered.
+- The player controller is built off a script that emulates Quake-style movement (fast, air control, bunnyhopping, etc).
+I also added functionality for a bit of weapon sway that corresponds to mouse movements. 
+
+**Enemy**
+- The enemy is a basic capsule entity. It spawns along the upper part of the arena and then travels
+toward the player. A maxiumum of eight enemies can be spawned at once, and they spawn at a rate of once
+every five seconds.
+
+<p align="right"></p>
+
 ### Credits
 
 * [Quake 3 Movement by Raymond Hulha](https://github.com/rhulha/quake3-movement-godot)
