@@ -1,5 +1,4 @@
 ## 3D First Person Shooter
-![header](image)
 
 This game is a 3D first person shooter in which you control a character and shoot red enemies that chase you. It has been made using the Godot Game Engine.
 
