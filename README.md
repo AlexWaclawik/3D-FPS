@@ -14,8 +14,8 @@ This game is a 3D first person shooter in which you control a character and shoo
 
 ### Credits
 
-[Quake 3 Movement by Raymond Hulha](https://github.com/rhulha/quake3-movement-godot)
-[Cel Shader by DaveTheDev](https://github.com/EXPWorlds/Godot-Cel-Shader)
+* [Quake 3 Movement by Raymond Hulha](https://github.com/rhulha/quake3-movement-godot)
+* [Cel Shader by DaveTheDev](https://github.com/EXPWorlds/Godot-Cel-Shader)
 
 Credit to my friend Andrew Lyons for providing the various voice lines heard in the game.
 
