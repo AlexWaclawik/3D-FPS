@@ -15,11 +15,11 @@ This game is a 3D first person shooter in which you control a character and shoo
 ### Design
 
 **Player**
-- The player consists of a capsule for collosion detection, with the head being on top. Attached to
+- The player consists of a capsule for collision detection, with the head being on top. Attached to
 the head is a camera and a raycast extending outward. The raycast is used for hitscan aiming. Lastly, a
 gun model is attached, and is centered.
-- The player controller is built off a script that emulates Quake-style movement (fast, air control, bunnyhopping, etc).
-I also added functionality for a bit of weapon sway that corresponds to mouse movements. 
+- The player controller is a slightly modified version of a script which emulates Quake-style movement (continuous acceleration, air control, bunnyhopping, etc).
+In addition, I also added a weapon sway effect, a health system, and different voice quips depending on the amount of health lost.
 
 **Enemy**
 - The enemy is a basic capsule entity. It spawns along the upper part of the arena and then travels
@@ -31,8 +31,7 @@ every five seconds.
 ### Credits
 
 * [Quake 3 Movement by Raymond Hulha](https://github.com/rhulha/quake3-movement-godot)
-
-Credit to my friend Andrew Lyons for providing the various voice lines heard in the game.
+* Credit to my friend Andrew Lyons for providing the various voice lines heard in the game.
 
 All assets listed below are obtained from https://opengameart.org, and are under a Creative Commons
 or GNU General Public License that provides permission for their use in this game.
