@@ -38,10 +38,9 @@ All assets listed below are obtained from https://opengameart.org, and are under
 or GNU General Public License that provides permission for their use in this game.
 
 Individual Credits:
-1. [Cyberpunk Moonlight Sonata](https://opengameart.org/content/cyberpunk-moonlight-sonata)
-2. [Muzzle Flash Texture & Model](https://opengameart.org/content/muzzle-flash-with-model)
-3. [Weapon Sounds](https://opengameart.org/content/chaingun-pistol-rifle-shotgun-shots)
-4. [Floor Tile Texture](https://opengameart.org/content/dirty-quake-ish-floor-tiles)
-5. [Crate & Door Textures](https://opengameart.org/content/doors-crates-low-res)
-6. [Crosshairs & Reticles](https://opengameart.org/content/crosshairs-and-reticles)
+1. [Muzzle Flash Texture & Model](https://opengameart.org/content/muzzle-flash-with-model)
+2. [Weapon Sounds](https://opengameart.org/content/chaingun-pistol-rifle-shotgun-shots)
+3. [Floor Tile Texture](https://opengameart.org/content/dirty-quake-ish-floor-tiles)
+4. [Crate & Door Textures](https://opengameart.org/content/doors-crates-low-res)
+5. [Crosshairs & Reticles](https://opengameart.org/content/crosshairs-and-reticles)
 

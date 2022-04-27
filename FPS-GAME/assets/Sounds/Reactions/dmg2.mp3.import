@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/dmg2.mp3-4717f1bc01a06928fe78a8534b3d5bf6.mp3str"
+
+[deps]
+
+source_file="res://assets/Sounds/Reactions/dmg2.mp3"
+dest_files=[ "res://.import/dmg2.mp3-4717f1bc01a06928fe78a8534b3d5bf6.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,6 +1,7 @@
 extends Node
 
 var count = 0
+var playerAlive = true
 
 func _ready():
 	pass
