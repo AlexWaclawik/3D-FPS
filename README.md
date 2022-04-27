@@ -1,34 +1,45 @@
-## Game Title
-![header](image)
+## 3D First Person Shooter
+
+This game is a 3D first person shooter in which you control a character and shoot red enemies that chase you. It has been made using the Godot Game Engine.
 
 <p align="right"></p>
 
 ### Installation
 
-1. [Download the latest release](link).
-2.
-3.
+1. [Download the latest release](https://github.com/AlexWaclawik/3D-FPS/releases).
+2. Unzip the contents and run the executable
+3. Enjoy
 
 <p align="right"></p>
 
 ### Design
 
-**Title**
-- Info
+**Player**
+- The player consists of a capsule for collosion detection, with the head being on top. Attached to
+the head is a camera and a raycast extending outward. The raycast is used for hitscan aiming. Lastly, a
+gun model is attached, and is centered.
+- The player controller is built off a script that emulates Quake-style movement (fast, air control, bunnyhopping, etc).
+I also added functionality for a bit of weapon sway that corresponds to mouse movements. 
 
-**State Transition Diagram**
-
-![]()
+**Enemy**
+- The enemy is a basic capsule entity. It spawns along the upper part of the arena and then travels
+toward the player. A maxiumum of eight enemies can be spawned at once, and they spawn at a rate of once
+every five seconds.
 
 <p align="right"></p>
 
 ### Credits
 
-All sound effects and sprites are obtained from https://opengameart.org, and are considered public domain under the
-Creative Commons 1.0 License found here: https://creativecommons.org/publicdomain/zero/1.0/.
+* [Quake 3 Movement by Raymond Hulha](https://github.com/rhulha/quake3-movement-godot)
 
-The splash screen theme music is composed by the artist *name* and is obtained from *link*.
-His work is available for use under the Creative Commons 3.0 License found here: https://creativecommons.org/licenses/by/3.0/.
+Credit to my friend Andrew Lyons for providing the various voice lines heard in the game.
+
+All assets listed below are obtained from https://opengameart.org, and are under a Creative Commons
+or GNU General Public License that provides permission for their use in this game.
 
 Individual Credits:
-1. [Name](link)
+1. [Muzzle Flash Texture & Model](https://opengameart.org/content/muzzle-flash-with-model)
+2. [Weapon Sounds](https://opengameart.org/content/chaingun-pistol-rifle-shotgun-shots)
+3. [Floor Tile Texture](https://opengameart.org/content/dirty-quake-ish-floor-tiles)
+4. [Crate & Door Textures](https://opengameart.org/content/doors-crates-low-res)
+5. [Crosshairs & Reticles](https://opengameart.org/content/crosshairs-and-reticles)

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/Models/Simple Arena/simpleArena.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="ConvexPolygonShape" id=1]
+points = PoolVector3Array( 18.3596, 10, 18.3596, -37.7287, -0.2266, -37.7287, -37.7213, -0.227629, 0.228972, 37.7213, -0.227629, -37.7287, 37.7287, -0.228659, 37.7287, -18.3665, 10, -18.3596, -37.7213, -0.227629, 37.7287, 19.4573, 9.62348, -19.4573, -19.4591, 9.62221, 19.459, -18.3596, 10, 18.3596, 18.3596, 10, -18.3596, 36.8615, 0.339801, 36.8615, -36.8584, 0.342211, -36.8583, -19.4607, 9.62094, -19.4466, -36.8537, 0.340882, 36.8609, 36.8537, 0.340882, -36.8609, 20.2951, 9.17676, 19.4207, -20.3405, 9.18604, 19.9023, 31.6865, 2.62787, 32.562, 35.9166, 0.844519, -35.9095 )
+
+[node name="simplePodium" type="StaticBody"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0 )
+shape = SubResource( 1 )

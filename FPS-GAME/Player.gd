@@ -1,6 +1,3 @@
-# Quake Style Movement credited to:
-# https://github.com/rhulha/quake3-movement-godot/blob/main/QuakeMovement/Character/cmd.gd
-
 extends KinematicBody
 
 #export (PackedScene) var flash = null

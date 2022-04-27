@@ -1,7 +1,0 @@
-[gd_scene format=2]
-
-[node name="mainMenu" type="MarginContainer"]
-margin_left = 120.0
-margin_top = 80.0
-margin_right = 120.0
-margin_bottom = 80.0
